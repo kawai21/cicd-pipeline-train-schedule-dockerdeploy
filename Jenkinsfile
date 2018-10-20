@@ -14,7 +14,7 @@ pipeline {
         }
         steps {
             script {
-                app = docker.build("kawai21/train-schedle3")
+                app = docker.build("kawai21/train-schedle")
                 app.inside {
                     sh 'echo $(curl localhost:8080)'
                 }
